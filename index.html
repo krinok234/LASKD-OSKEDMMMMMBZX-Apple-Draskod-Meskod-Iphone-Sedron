@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnderCore - Покупка доната</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="snow-container"></div>
+    
+    <header>
+        <div class="logo">
+            <h1>EnderCore</h1>
+            <p>Лучший Minecraft сервер</p>
+        </div>
+        <nav>
+            <a href="#main" class="nav-link">Главная</a>
+            <a href="#donate" class="nav-link">Донат</a>
+            <a href="#info" class="nav-link">Информация о сервере</a>
+            <a href="#contact" class="nav-link">Как связаться</a>
+            <a href="rules.html" class="nav-link">Правила</a>
+            <a href="auth.html" class="nav-link">Вход</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main" class="hero">
+            <div class="hero-content">
+                <h2>Покупка <span class="highlight">доната</span></h2>
+                <p>Поддержите свой любимый сервер</p>
+            </div>
+        </section>
+
+        <section id="donate" class="donate-section">
+            <div class="donate-form">
+                <h3>Выберите привилегию</h3>
+                
+                <div class="privilege-tabs">
+                    <button class="tab-btn active" data-category="survival">SURVIVAL</button>
+                    <button class="tab-btn" data-category="minigames">MINIGAMES</button>
+                    <button class="tab-btn" data-category="hardcore">HARDCORE</button>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="nickname" placeholder="Введите ваш NickName" />
+                </div>
+
+                <div class="input-group">
+                    <select id="privilege">
+                        <option value="">Выберите товар</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="promo" placeholder="Промо-код" />
+                </div>
+
+                <button class="btn-primary" id="payBtn">ОПЛАТИТЬ / ДОБАВИТЬ</button>
+                
+                <p class="info-text">Нажимая на кнопку, вы соглашаетесь<br>с <a href="rules.html">правилами сервера</a></p>
+            </div>
+
+            <div class="players-section">
+                <h3>Последние покупки игроков</h3>
+                <div class="players-carousel">
+                    <button class="carousel-btn prev">‹</button>
+                    <div class="players-list">
+                        <div class="player-card">
+                            <div class="player-skin"></div>
+                            <p class="player-name">PowerfulLegend</p>
+                            <p class="player-privilege">VIP</p>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-skin"></div>
+                            <p class="player-name">MrLols</p>
+                            <p class="player-privilege">Premium</p>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-skin"></div>
+                            <p class="player-name">Probe</p>
+                            <p class="player-privilege">Elite</p>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-skin"></div>
+                            <p class="player-name">Ice</p>
+                            <p class="player-privilege">Legend</p>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-skin"></div>
+                            <p class="player-name">ArialerPlus</p>
+                            <p class="player-privilege">God</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <div class="reviews-section">
+                    <h3>Отзывы наших игроков</h3>
+                    <div class="review-carousel">
+                        <button class="carousel-btn prev">‹</button>
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Игрок123 Nick-SomeChicken</span>
+                                <div class="stars-rating">★★★★★</div>
+                            </div>
+                            <p class="review-text">Лучший сервер! Администрация в адекватном состоянии, донат не дает преимущества над игроками. Играю с удовольствием!</p>
+                        </div>
+                        <button class="carousel-btn next">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="info-section">
+            <div class="info-container">
+                <h2>Информация о сервере</h2>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Режимы игры</h3>
+                        <ul>
+                            <li><strong>Survival</strong> - классическое выживание с экономикой</li>
+                            <li><strong>Minigames</strong> - BedWars, SkyWars, BuildBattle</li>
+                            <li><strong>Hardcore</strong> - хардкорное выживание для опытных</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Особенности</h3>
+                        <ul>
+                            <li>Без лагов - мощное железо</li>
+                            <li>Защита от гриферов</li>
+                            <li>Регулярные ивенты и конкурсы</li>
+                            <li>Адекватная администрация 24/7</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                                <path d="M15.5 14.5L18.5 21.5H5.5L8.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 2V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Версия и IP</h3>
+                        <ul>
+                            <li><strong>Версия:</strong> 1.16.5 - 1.20.4</li>
+                            <li><strong>IP:</strong> play.endercore.ru</li>
+                            <li><strong>Онлайн:</strong> 500+ игроков</li>
+                            <li><strong>Работаем с:</strong> 2026 года</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 14L12 17L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Донат</h3>
+                        <ul>
+                            <li>Честный донат без P2W</li>
+                            <li>Только косметика и удобства</li>
+                            <li>Поддержка развития сервера</li>
+                            <li>Регулярные акции и скидки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Как связаться</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.5 16.5H7.5V15H16.5V16.5ZM16.5 13.5H7.5V12H16.5V13.5ZM16.5 10.5H7.5V9H16.5V10.5Z" fill="currentColor"/>
+                                <circle cx="8" cy="7" r="1.5" fill="currentColor"/>
+                                <circle cx="16" cy="7" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Discord</h3>
+                        <p>Присоединяйтесь к нашему Discord серверу</p>
+                        <a href="https://discord.gg/YfEGn8F9RH" target="_blank" class="contact-btn">discord.gg/YfEGn8F9RH</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09407 12.5923C7.9604 11.7616 8.09207 10.9099 8.47033 10.1584C8.84859 9.40685 9.45419 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>ВКонтакте</h3>
+                        <p>Следите за новостями в нашей группе</p>
+                        <a href="#" class="contact-btn">vk.com/endercore</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Напишите нам на почту</p>
+                        <a href="mailto:support@endercore.ru" class="contact-btn">support@endercore.ru</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0707 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16131 5.19941C1.82064 5.55057 1.57875 5.98541 1.46 6.46C1.14521 8.20556 0.991228 9.97631 1 11.75C0.988771 13.537 1.14277 15.3213 1.46 17.08C1.59096 17.5398 1.83831 17.9581 2.17818 18.2945C2.51805 18.6308 2.93884 18.8738 3.4 19C5.12 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0707 18.8668 21.498 18.6118 21.8387 18.2606C22.1793 17.9094 22.4212 17.4746 22.54 17C22.8524 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8572 8.1787 22.54 6.42Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>Смотрите видео о сервере</p>
+                        <a href="#" class="contact-btn">youtube.com/@endercore</a>
+                    </div>
+                </div>
+
+                <div class="support-info">
+                    <h3>Техническая поддержка</h3>
+                    <p>Если у вас возникли проблемы или вопросы, обращайтесь:</p>
+                    <ul>
+                        <li>В Discord - канал #поддержка</li>
+                        <li>На почту support@endercore.ru</li>
+                        <li>В игре командой /ticket</li>
+                    </ul>
+                    <p class="response-time">⏱️ Среднее время ответа: 15 минут</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EnderCore. Все права защищены.</p>
+            <p>Сервер не относится к Mojang Studios и Microsoft Corporation</p>
+            <p style="font-size: 11px; margin-top: 10px; color: #666;">
+                Minecraft является торговой маркой Mojang Studios. Мы не аффилированы с Mojang Studios или Microsoft.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

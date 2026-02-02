@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnderCore - Правила сервера</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+    <div class="snow-container"></div>
+    
+    <header>
+        <div class="logo">
+            <h1>EnderCore</h1>
+            <p>Лучший Minecraft сервер</p>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="index.html#donate" class="nav-link">Донат</a>
+            <a href="index.html#info" class="nav-link">Информация о сервере</a>
+            <a href="index.html#contact" class="nav-link">Как связаться</a>
+            <a href="rules.html" class="nav-link active">Правила</a>
+            <a href="auth.html" class="nav-link">Вход</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rules-hero">
+            <div class="hero-content">
+                <h2>Правила <span class="highlight">сервера</span></h2>
+                <p>Ознакомьтесь с правилами перед игрой</p>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <div class="rules-container">
+                <div class="rules-tabs">
+                    <button class="rules-tab active" data-section="general">
+                        <span class="tab-icon">📋</span>
+                        <span class="tab-text">Основные положения</span>
+                    </button>
+                    <button class="rules-tab" data-section="gameplay">
+                        <span class="tab-icon">🎮</span>
+                        <span class="tab-text">Игровой процесс</span>
+                    </button>
+                    <button class="rules-tab" data-section="chat">
+                        <span class="tab-icon">💬</span>
+                        <span class="tab-text">Правила чата</span>
+                    </button>
+                    <button class="rules-tab" data-section="donators">
+                        <span class="tab-icon">👑</span>
+                        <span class="tab-text">Для донатеров</span>
+                    </button>
+                    <button class="rules-tab" data-section="custom">
+                        <span class="tab-icon">✨</span>
+                        <span class="tab-text">Титулы и привилегии</span>
+                    </button>
+                    <button class="rules-tab" data-section="reports">
+                        <span class="tab-icon">🚨</span>
+                        <span class="tab-text">Система репортов</span>
+                    </button>
+                </div>
+
+                <div class="rules-content" id="rulesContent">
+                    <!-- Контент загружается динамически -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 EnderCore. Все права защищены.</p>
+            <p>Сервер не относится к Mojang Studios и Microsoft Corporation</p>
+            <p style="font-size: 11px; margin-top: 10px; color: #666;">
+                Minecraft является торговой маркой Mojang Studios. Мы не аффилированы с Mojang Studios или Microsoft.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="rules.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[package]
+name = "endercore-donate"
+version = "1.0.0"
+description = "EnderCore Minecraft Server Donation Application"
+authors = ["EnderCore Team"]
+license = ""
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = [ "window-unminimize", "window-start-dragging", "window-minimize", "window-hide", "window-show", "window-unmaximize", "window-close", "window-maximize", "shell-open"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,197 @@
+.rules-hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.rules-section {
+    padding: 40px 20px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.rules-container {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.rules-tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rules-tab {
+    padding: 20px 15px;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.rules-tab:last-child {
+    border-right: none;
+}
+
+.rules-tab:hover {
+    background: rgba(255, 149, 0, 0.1);
+    color: #ff9500;
+}
+
+.rules-tab.active {
+    background: rgba(255, 149, 0, 0.2);
+    color: #ff9500;
+}
+
+.rules-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff9500, transparent);
+}
+
+.tab-icon {
+    font-size: 24px;
+}
+
+.tab-text {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rules-content {
+    padding: 40px;
+    min-height: 600px;
+}
+
+.rules-block {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.rules-block.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rules-block h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #ff9500 0%, #ff6b00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.rules-block h3 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+    color: #ff9500;
+    font-weight: 600;
+}
+
+.rules-block p, .rules-block li {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.rules-block ul, .rules-block ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.rules-block li {
+    margin-bottom: 8px;
+}
+
+.rules-block strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.rule-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 3px solid #ff9500;
+    transition: all 0.3s;
+}
+
+.rule-item:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(255, 149, 0, 0.2);
+}
+
+.punishment {
+    display: inline-block;
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff6b6b;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.warning-box {
+    background: rgba(255, 149, 0, 0.1);
+    border: 1px solid rgba(255, 149, 0, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.warning-box h4 {
+    color: #ff9500;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .rules-tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rules-content {
+        padding: 20px;
+    }
+    
+    .rules-block h2 {
+        font-size: 24px;
+    }
+}

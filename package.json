@@ -1,0 +1,19 @@
+{
+  "name": "endercore-donate",
+  "version": "1.0.0",
+  "description": "EnderCore Minecraft Server Donation Site",
+  "scripts": {
+    "start": "node server.js",
+    "start:auth": "node server-auth.js",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.9"
+  }
+}
